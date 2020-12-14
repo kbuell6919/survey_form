@@ -1,2 +1,99 @@
-<hi id="Title">Tell me video games played</h1>
-  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      body {
+         font-family:Copperplate, Papyrus, fantasy;
+         padding:15%;
+
+      }
+      label {
+         font-size:20px;
+         display:block;
+         padding-bottom:10px;
+      }
+      input {
+        display:box;
+      }
+      textarea{
+        display: block;
+        width:100%
+      }
+      form{
+        background-color: #A3E4D7;
+        padding: 40px 40px 40px 40px;
+        }
+      .raido-inline {
+        display:inline-block;
+      }
+      #button-area {
+        float: none;
+        width:50%:
+        heigth:50%;
+      }
+      input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label{
+        display : inline-block;
+        margin-left: -28px;
+        padding-left: 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">Tell me  MMO video games played</h1>
+    <p id="description">
+       This is a survey which you can say what video games you play
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="First Name"></input>
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email"></<input><br>
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10"required placeholder="ranking 1-10"></input><br>
+
+
+      <label for="choice">Choose a MMO:</label>
+      <select name="choice" id="dropdown" class="dropdown">
+
+          <option value="wow ">WOW</option>
+          <option value="elder scrolls online">Elder Scrolls Online</option>
+          <option value="fallout ">Fallout</option>
+          <option value="starwars the old rebulic">Starwars the Old Rebulic</option>
+          <option value="other ">Other</option>
+
+      </select>
+       <br>
+      <div id="button-area">
+        <label id="gender-label">Gender:</label>
+       <input type="radio"  id="male" name="gender" value="male">
+          <label for="male" class"radio-inline">Male</label>
+        <input type="radio" class"radio-inline" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+       <input type="radio" class"radio-inline" id="other" name="gender" value="other">
+         <label for="other">Other</label>
+         </div>
+        <br>
+       <div id="button-area">
+            <label id="play-device">What type of Device:</label>
+           <input type="checkbox" id="pc" name="pc" value="PC">
+            <label for="pc"> I have a PC</label><br>
+          <input type="checkbox" id="xbox" name="xbox" value="Xbox">
+            <label for="xbox"> I have a Xbox</label><br>
+         <input type="checkbox" id="playstation" name="playstation" value="Playstation">
+           <label for="palystation"> I have a Playstation</label><br>
+         </div>
+        <br>
+
+        <label for="whychoice">Why were choices made:</label>
+
+         <textarea id="whychoice" name="whychoice" placeholder="Enter why did you make the choices you did" rows="4" cols="50">
+         </textarea> <br>
+           <input type="submit" name="subit" id="submit">
+      </form>
+
+      <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+     </body>
+</html>
